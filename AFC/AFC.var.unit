@@ -16,12 +16,12 @@
             "material": "PLA",
             "spool_id": "35",
             "color": "#ECC1E0",
-            "weight": 727.6020112848262,
+            "weight": 711.3393903745508,
             "extruder_temp": 210,
             "runout_lane": "lane4",
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": null
+            "status": "Loaded"
         },
         "lane2": {
             "name": "lane2",
@@ -39,12 +39,12 @@
             "material": "PLA",
             "spool_id": "23",
             "color": "#2269A2",
-            "weight": 724.7268093233756,
+            "weight": 650.5807915333024,
             "extruder_temp": null,
             "runout_lane": "NONE",
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": "Tool Loaded"
+            "status": "Loaded"
         },
         "lane3": {
             "name": "lane3",
@@ -59,15 +59,15 @@
             "prep": true,
             "tool_loaded": false,
             "loaded_to_hub": true,
-            "material": "ABS",
-            "spool_id": "72",
-            "color": "#262825",
-            "weight": 0.0,
+            "material": "ASA",
+            "spool_id": "76",
+            "color": "#008C95",
+            "weight": 78.12395665643419,
             "extruder_temp": 260,
             "runout_lane": "NONE",
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": "Loaded"
+            "status": "Tool Loaded"
         },
         "lane4": {
             "name": "lane4",
@@ -85,12 +85,12 @@
             "material": "ASA",
             "spool_id": "100",
             "color": "#606161",
-            "weight": 840.8735474945009,
+            "weight": 832.5100725982594,
             "extruder_temp": 260,
             "runout_lane": "NONE",
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": "Loaded"
+            "status": null
         }
     },
     "system": {

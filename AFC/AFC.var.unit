@@ -6,7 +6,7 @@
             "hub": "Turtle_1",
             "extruder": "extruder",
             "buffer": "Turtle_1",
-            "buffer_status": "Trailing",
+            "buffer_status": "Advancing",
             "lane": 1,
             "map": "T0",
             "load": true,
@@ -16,12 +16,12 @@
             "material": "PLA",
             "spool_id": "35",
             "color": "#ECC1E0",
-            "weight": 711.0978038629852,
+            "weight": 672.4562479690971,
             "extruder_temp": 210,
             "runout_lane": "NONE",
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": null
+            "status": "Loaded"
         },
         "lane2": {
             "name": "lane2",
@@ -29,22 +29,22 @@
             "hub": "Turtle_1",
             "extruder": "extruder",
             "buffer": "Turtle_1",
-            "buffer_status": "Trailing",
+            "buffer_status": "Advancing",
             "lane": 2,
             "map": "T1",
             "load": true,
             "prep": true,
-            "tool_loaded": true,
+            "tool_loaded": false,
             "loaded_to_hub": true,
             "material": "PLA",
             "spool_id": "34",
             "color": "#63A9D4",
-            "weight": 360.591546938247,
+            "weight": 284.63925590686915,
             "extruder_temp": 210,
             "runout_lane": "NONE",
-            "filament_status": "In Tool",
-            "filament_status_led": "#0000ff",
-            "status": "Tooled"
+            "filament_status": "Ready",
+            "filament_status_led": "#00cc00",
+            "status": "Loaded"
         },
         "lane3": {
             "name": "lane3",
@@ -52,7 +52,7 @@
             "hub": "Turtle_1",
             "extruder": "extruder",
             "buffer": "Turtle_1",
-            "buffer_status": "Trailing",
+            "buffer_status": "Advancing",
             "lane": 3,
             "map": "T2",
             "load": true,
@@ -62,12 +62,12 @@
             "material": "PLA",
             "spool_id": "64",
             "color": "#2B292E",
-            "weight": 654.1330541013192,
+            "weight": 651.1550431512562,
             "extruder_temp": 210,
             "runout_lane": "NONE",
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": null
+            "status": "Loaded"
         },
         "lane4": {
             "name": "lane4",
@@ -75,7 +75,7 @@
             "hub": "Turtle_1",
             "extruder": "extruder",
             "buffer": "Turtle_1",
-            "buffer_status": "Trailing",
+            "buffer_status": "Advancing",
             "lane": 4,
             "map": "T3",
             "load": true,
@@ -94,13 +94,13 @@
         }
     },
     "system": {
-        "current_load": "lane2",
+        "current_load": null,
         "num_units": 1,
         "num_lanes": 4,
         "num_extruders": 1,
         "extruders": {
             "extruder": {
-                "lane_loaded": "lane2"
+                "lane_loaded": null
             }
         }
     }

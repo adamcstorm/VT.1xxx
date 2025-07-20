@@ -58887,3 +58887,10 @@ sqlite based history database found! Copying...
 From https://github.com/adamcstorm/VT.1xxx
  * branch              main       -> FETCH_HEAD
 Already up to date.
+[main 4b6a8422] Autocommit from 2025-07-20 12:00:02
+ 5 files changed, 156 insertions(+), 38 deletions(-)
+ create mode 100644 config_backups/printer-20250720_081946.cfg
+To https://github.com/adamcstorm/VT.1xxx.git
+   44cc51ba..4b6a8422  main -> main
+sqlite based history database found! Copying...
+fatal: unable to access 'https://github.com/adamcstorm/VT.1xxx.git/': Could not resolve host: github.com

@@ -11,7 +11,7 @@
             "map": "T0",
             "load": true,
             "prep": true,
-            "tool_loaded": true,
+            "tool_loaded": false,
             "loaded_to_hub": true,
             "material": "PLA",
             "density": 1.24,
@@ -19,12 +19,12 @@
             "empty_spool_weight": 147.0,
             "spool_id": 74,
             "color": "#848484",
-            "weight": 550.6942847645922,
+            "weight": 470.3495731161078,
             "extruder_temp": null,
             "runout_lane": null,
-            "filament_status": "In Tool",
-            "filament_status_led": "#0000ff",
-            "status": "Tooled"
+            "filament_status": "Ready",
+            "filament_status_led": "#00cc00",
+            "status": "None"
         },
         "lane2": {
             "name": "lane2",
@@ -37,7 +37,7 @@
             "map": "T1",
             "load": true,
             "prep": true,
-            "tool_loaded": false,
+            "tool_loaded": true,
             "loaded_to_hub": true,
             "material": "PLA",
             "density": 1.24,
@@ -45,12 +45,12 @@
             "empty_spool_weight": 209.0,
             "spool_id": 134,
             "color": "#e7ebe5",
-            "weight": 975.4768234299594,
+            "weight": 963.1799450373552,
             "extruder_temp": null,
             "runout_lane": null,
-            "filament_status": "Ready",
-            "filament_status_led": "#00cc00",
-            "status": "Loaded"
+            "filament_status": "In Tool",
+            "filament_status_led": "#0000ff",
+            "status": "Tooled"
         },
         "lane3": {
             "name": "lane3",
@@ -71,12 +71,12 @@
             "empty_spool_weight": 147.0,
             "spool_id": 111,
             "color": "#2b292e",
-            "weight": 227.80955017715144,
+            "weight": 213.76105649978817,
             "extruder_temp": null,
             "runout_lane": null,
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": "Loaded"
+            "status": "None"
         },
         "lane4": {
             "name": "lane4",
@@ -106,13 +106,13 @@
         }
     },
     "system": {
-        "current_load": "lane1",
+        "current_load": "lane2",
         "num_units": 1,
         "num_lanes": 4,
         "num_extruders": 1,
         "extruders": {
             "extruder": {
-                "lane_loaded": "lane1"
+                "lane_loaded": "lane2"
             }
         },
         "bypass": {

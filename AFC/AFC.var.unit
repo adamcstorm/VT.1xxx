@@ -8,7 +8,7 @@
             "buffer": "Turtle_1",
             "buffer_status": "Advancing",
             "lane": 1,
-            "map": "T2",
+            "map": "T0",
             "load": false,
             "prep": false,
             "tool_loaded": false,
@@ -34,7 +34,7 @@
             "buffer": "Turtle_1",
             "buffer_status": "Advancing",
             "lane": 2,
-            "map": "T1",
+            "map": "T2",
             "load": false,
             "prep": false,
             "tool_loaded": false,
@@ -60,15 +60,15 @@
             "buffer": "Turtle_1",
             "buffer_status": "Advancing",
             "lane": 3,
-            "map": "T0",
-            "load": true,
+            "map": "T1",
+            "load": false,
             "prep": false,
             "tool_loaded": false,
             "loaded_to_hub": false,
             "material": "",
             "density": 1.24,
             "diameter": 1.75,
-            "empty_spool_weight": 162.0,
+            "empty_spool_weight": 157.0,
             "spool_id": null,
             "color": "",
             "weight": 0,
@@ -112,7 +112,7 @@
         "num_extruders": 1,
         "extruders": {
             "extruder": {
-                "lane_loaded": ""
+                "lane_loaded": null
             }
         },
         "bypass": {

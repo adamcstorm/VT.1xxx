@@ -33,6 +33,14 @@ sync_rate = 5
 
 [timelapse]
 
+[analysis]
+platform = auto
+estimator_config = 
+auto_dump_default_config = false
+estimator_timeout = 600
+enable_auto_analysis = true
+enable_estimator_updates = true
+
 [update_manager]
 channel = dev
 refresh_interval = 168

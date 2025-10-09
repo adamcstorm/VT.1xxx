@@ -24,6 +24,60 @@ cors_domains:
 
 [history]
 
+[file_manager]
+enable_object_processing: True
+
+[spoolman]
+# server: https://spoolman.the-storms.net
+server: http://192.168.20.10:7912
+#   URL to the Spoolman instance. This parameter must be provided.
+sync_rate: 5
+#   The interval, in seconds, between sync requests with the
+#   Spoolman server.  The default is 5.
+
+[timelapse]
+##   Following basic configuration is default to most images and don't need
+##   to be changed in most scenarios. Only uncomment and change it if your
+##   Image differ from standart installations. In most common scenarios 
+##   a User only need [timelapse] in their configuration.
+#output_path: ~/timelapse/
+##   Directory where the generated video will be saved
+#frame_path: /tmp/timelapse/
+##   Directory where the temporary frames are saved
+#ffmpeg_binary_path: /usr/bin/ffmpeg
+##   Directory where ffmpeg is installed
+
+[analysis]
+platform: auto
+#   The platform flavor of Klipper Estimator to use.  Must be a choice
+#   from rpi, linux, osx, and auto. Note that "rpi" supports armv7 and
+#   aarch64 linux platforms, whereas "linux" supports amd64 linux
+#   platform.  The auto choice will attempt to automatically determine
+#   the correct platform.  The default is auto.
+estimator_config:
+#   A path relative to the "config" root specifying a config
+#   file to use for Klipper Estimator.  The default is to
+#   use a configuration dumped with data retrieved from Klipper's
+#   current settings.
+auto_dump_default_config: false
+#   When set to true the default configuration for Klipper Estimator
+#   will be dumped every time Klippy restarts.  When false the
+#   configuration is only dumped if the default configuration file
+#   does not exist.  The default is false.
+estimator_timeout: 600
+#   The maximum amount of time (in seconds) Klipper Estimator
+#   is given to process a gcode file before processing is
+#   aborted.  The default is 600 seconds.
+enable_auto_analysis: true
+#   When set to true Klipper Estimator will be used to perform a
+#   post-process on gcode files immediately prior to metadata extraction.
+#   The post-process will update the time estimate and M73 commands present
+#   in the gcode file.  This automates the time analysis for any event
+#   that triggers metadata processing.   Default is false.
+enable_estimator_updates: true
+#   When true Moonraker will create and register an entry for
+#   klipper_estimator with the update manager.  Default is false.
+
 [update_manager]
 channel: dev
 refresh_interval: 168
@@ -63,3 +117,70 @@ managed_services: mobileraker
 env: /home/astorm/mobileraker-env/bin/python
 requirements: scripts/mobileraker-requirements.txt
 install_script: scripts/install.sh
+
+[update_manager crowsnest]
+type: git_repo
+path: ~/crowsnest
+origin: https://github.com/mainsail-crew/crowsnest.git
+managed_services: crowsnest
+install_script: tools/pkglist.sh
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type: git_repo
+channel: dev
+path: ~/Klipper-Adaptive-Meshing-Purging
+origin: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services: klipper
+primary_branch: main
+
+[update_manager klipper_tmc_autotune]
+type: git_repo
+channel: dev
+path: ~/klipper_tmc_autotune
+origin: https://github.com/andrewmcgr/klipper_tmc_autotune.git
+managed_services: klipper
+primary_branch: main
+install_script: install.sh
+
+[update_manager led_effect]
+type: git_repo
+path: ~/klipper-led_effect
+origin: https://github.com/julianschill/klipper-led_effect.git
+is_system_service: False
+
+[update_manager timelapse]
+type: git_repo
+primary_branch: main
+path: ~/moonraker-timelapse
+origin: https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services: klipper moonraker
+
+## Klippain Shake&Tune automatic update management
+[update_manager Klippain-ShakeTune]
+type: git_repo
+origin: https://github.com/Frix-x/klippain-shaketune.git
+path: ~/klippain_shaketune
+virtualenv: ~/klippy-env
+requirements: requirements.txt
+system_dependencies: system-dependencies.json
+primary_branch: main
+managed_services: klipper
+
+[update_manager KlipperScreen]
+type: git_repo
+path: ~/KlipperScreen
+origin: https://github.com/KlipperScreen/KlipperScreen.git
+virtualenv: ~/.KlipperScreen-env
+requirements: scripts/KlipperScreen-requirements.txt
+system_dependencies: scripts/system-dependencies.json
+managed_services: KlipperScreen
+
+[update_manager afc-software]
+type: git_repo
+path: ~/AFC-Klipper-Add-On
+origin: https://github.com/ArmoredTurtle/AFC-Klipper-Add-On.git
+managed_services: klipper
+primary_branch: main
+is_system_service: False
+info_tags:
+    desc=AFC Klipper Add On

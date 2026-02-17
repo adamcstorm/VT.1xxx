@@ -65090,3 +65090,7 @@ error: object file .git/objects/ed/66e45553f2028b8d3081eb64f2cbb5e16733d1 is emp
 error: object file .git/objects/ed/66e45553f2028b8d3081eb64f2cbb5e16733d1 is empty
 fatal: loose object ed66e45553f2028b8d3081eb64f2cbb5e16733d1 (stored in .git/objects/ed/66e45553f2028b8d3081eb64f2cbb5e16733d1) is corrupt
 Everything up-to-date
+sqlite based history database found! Copying...
+From https://github.com/adamcstorm/VT.1xxx
+ * branch              main       -> FETCH_HEAD
+Already up to date.
